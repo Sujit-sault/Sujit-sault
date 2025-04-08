@@ -39,9 +39,10 @@
         <main>
             <h1>Welcome to Sujit's Website</h1>
             <div class="bio">
-            <a href="Images/MyImage.jpg">
+            <a href="Images/MyImage.jpg" class="selfie-link">
                 <img src="Images/MyImage300.jpg" alt="Me Trying Some Pozes" sizes="(max-width: 500px) 150px, 300px"
-                    srctest="Images/MyImage150.jpg 150w, Images/MyImage300.jpg 300w">
+                    srctest="Images/MyImage150.jpg 150w, Images/MyImage300.jpg 300w" class="selfie-photo">
+                    <img src="Images/paperclip.png" class="paperclip" alt="Paperclip">
             </a>
             <p>My name is Sujit. I am from Kavre,Nepal. I am currently enrolled in Computer Programming at Sault
                 College.</p>
@@ -79,37 +80,68 @@
                     
                   
             <h2>My Favourite Things</h2>
+            <div class="favourites">
+                  
+            <input type="radio" name="favourites-tab" id="tab1" checked>
+            <label for="tab1">   
             <figure>
                 <a href="https://www.linkinpark.com/">
                     <img src="images/logo.webp" alt="Favourite band" style="width:210px;" />
                 </a>
                 <figcaption>My Favoutite Band</figcaption>
             </figure>
+            </label>
+             </div>
+
+             <input type="radio" name="favourites-tab" id="tab2">
+             <label for="tab2">
             <h3>Favorite places</h3>
+            </label>
+            <div>
             <ol>
                 <li>Robertson Cliffs</li>
                 <li>Crystal Creek</li>
                 <li>Fort Creek Conservation Area</li>
             </ol>
+            </div>
+          
+            <input type="radio" name="favourites-tab" id="tab3">
+            <label for="tab3">
             <h3>Haiku</h3>
+            </label>
+            <div>
             <p>
                 An old silent pond<br>
                 A frog jumps into the pond—<br>
                 Splash! Silence again.<br>
                 <cite>by <span class="author">Matsuo Bashō</span></cite>
             </p>
+            </div>
+           
+            <input type="radio" name="favourites-tab" id="tab4">
+            <label for="tab4">
             <h3>Public Domain Audiobook</h3>
+            </label>
+            <div>
             <audio controls>
                 <source
                     src="https://www.archive.org/download/scorchedface_2502_librivox/scorchedface_01_hammett_128kb.mp3">
                 <a href="https://www.archive.org/download/scorchedface_2502_librivox/scorchedface_01_hammett_128kb.mp3"
                     download>Download the audiobook</a>
             </audio>
+            </div>
+     
+            <input type="radio" name="favourites-tab" id="tab5">
+            <label for="tab5">
             <h3>YouTube Video</h3>
+            </label>
+            <div>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/zOjov-2OZ0E?si=KExaXVKgjqP3pfji"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           </div>
+        
         </main>
         <footer>
             <hr>

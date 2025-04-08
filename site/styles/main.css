@@ -101,11 +101,11 @@ nav {
     margin-left: 20px;  
     margin-right: 20px;
 }
-
+/*
 nav ul li {
     display: inline;
 }
-
+*/
 nav ul li a {
     display: inline-block;
     text-decoration: none;
@@ -303,4 +303,169 @@ img {
 footer {
     clear: both;
 }
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* General styling */
+body {
+    font-family: sans-serif;
+    background-color: #fffaf0;
+    padding: 2rem;
+    color: #333;
+}
+
+h2 {
+    color: #c2185b;
+    font-weight: bold;
+}
+
+label {
+    display: inline-block;
+    margin: 0.5rem 1rem 0 0;
+    cursor: pointer;
+    color: #444;
+    font-weight: bold;
+}
+
+label:hover {
+    color: #6a1b9a;
+}
+
+/* Hide all radio buttons */
+input[type="radio"][name="favourites-tab"] {
+    display: none;
+}
+
+/* Hide all divs by default */
+input[type="radio"] ~ div {
+    display: none;
+    padding: 1rem;
+    background: #ddd;
+    border-radius: 6px;
+    margin-top: 1rem;
+}
+
+/* Show the correct section when its radio button is checked */
+#tab1:checked + label + div {
+    display: block;
+}
+
+#tab2:checked + label + div {
+    display: block;
+}
+
+#tab3:checked + label + div {
+    display: block;
+}
+
+#tab4:checked + label + div {
+    display: block;
+}
+
+#tab5:checked + label + div {
+    display: block;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .gallery a {
+    display: block;
+    transition: transform 0.3s;
+  }
+  
+  .gallery a:hover {
+    transform: scale(1.1);
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+  }
+  
+  .row-span-2 {
+    grid-row: span 2;
+  }
+  
+  .col-span-2 {
+    grid-column: span 2;
+  }
+
+  
+
+.selfie-link {
+    position: relative; 
+    display: inline-block; 
+  }
+  
+ 
+  .selfie-photo {
+    display: block; 
+    width: 100%; 
+  }
+  
+ 
+  .paperclip {
+    width: 20%;
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    background: none !important; 
+    box-shadow: none !important;
+  }
+  
+ 
+  .paperclip img {
+    max-width: 100%; 
+    height: auto;
+  }
+  
+  .back-to-top {
+    position: sticky;
+    bottom: 10px;
+    left: -25px;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+  }
+  
+  .back-to-top:hover {
+    transform: rotate(45deg);
+  }
+  
+  .back-to-top:focus {
+    outline: none;
+  }
+  
+  
+  
+  
 
